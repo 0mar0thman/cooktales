@@ -1,0 +1,89 @@
+.CheckoutProduct {
+  display: flex;
+  background: rgb(209, 209, 209);
+  background: linear-gradient(300deg,
+      rgba(255, 255, 255, 0.1) 20%,
+      rgba(255, 255, 255, 0.5) 25%);
+}
+
+.CheckoutProduct-info {
+  display: block;
+}
+
+.card-body>.button {
+  width: 50%;
+  background-color: rgb(214, 29, 4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.card-body>button:active,
+.card-body>button:hover {
+  transform: scale(0.99);
+}
+
+.CheckoutProduct-rating {
+  display: flex;
+  color: orange;
+}
+
+.CheckoutProduct-rating svg {
+  color: rgp(255, 164, 28);
+}
+
+.CheckoutProduct-title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.CheckoutProduct img {
+  height: auto;
+  object-fit: cover;
+}
+
+.CheckoutProduct-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 25px;
+  padding: 0;
+}
+
+.quantity-control h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .sm-col {
+    margin-left: 0px !important;
+  }
+
+  .card-body>.button {
+    width: 100%;
+    background-color: rgb(214, 29, 4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px;
+  }
+}

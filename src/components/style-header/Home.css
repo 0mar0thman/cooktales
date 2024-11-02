@@ -1,0 +1,189 @@
+.home-container {
+  background: linear-gradient(82deg,
+      rgb(0, 92, 87) 0%,
+      rgba(255, 255, 255, 1) 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+
+.home-container h2 {
+  z-index: 100;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-family: "Merriweather", serif;
+}
+
+.home-container h2::before,
+.home-container h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 10%;
+  background-color: #ffffff;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h2::before {
+  left: 5%;
+}
+
+.home-container h2::after {
+  right: 5%;
+}
+
+.swiper {
+  background: radial-gradient(circle,
+      rgb(0, 90, 159, 0.2) 0%,
+      rgba(255, 255, 255, 0.2)100%);
+  box-shadow: 0 2px 10px rgb(0, 74, 96);
+}
+
+.category-section {
+  z-index: 55;
+}
+
+.home-img {
+  width: 100%;
+  margin-bottom: -180px;
+  mask-image: linear-gradient(to bottom, black);
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+  transition: all 1.5s ease-in-out;
+  margin: 10px;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 0px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.show-more {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.CookTales {
+  font-size: 80px;
+  position: absolute;
+  top: 60%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+  letter-spacing: 65px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1));
+}
+
+
+.CookTales p {
+  font-size: 35px;
+  text-align: center;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  -webkit-mask-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1));
+}
+
+@media (max-width: 768px) {
+  .home-img {
+    width: 100%;
+    margin-bottom: 0;
+    mask-image: linear-gradient(to bottom, black);
+    position: relative;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+
+  .CookTales p {
+    font-size: 15px;
+    text-align: center;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1));
+  }
+
+  .CookTales {
+    font-size: 30px !important;
+    position: absolute;
+    top: 31% !important;
+    left: 53% !important;
+    transform: translate(-50%, -50%);
+    z-index: 150;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+    letter-spacing: 20px !important;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1));
+  }
+}
+
+.Miscellaneous-category h2 {
+  font-size: 25px;
+}
+
+.blurred-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.category-section {
+  position: relative;
+  overflow: hidden;
+}

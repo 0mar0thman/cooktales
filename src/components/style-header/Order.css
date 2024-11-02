@@ -1,0 +1,58 @@
+.order {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-total p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.order-total h3 {
+  font-size: 18px;
+  color: #e60023;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.order .CheckoutProduct {
+  margin-bottom: 15px;
+}
+
+.order p strong {
+  color: #000;
+  font-weight: bold;
+}
+
+.order strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+
+.youtube-link button {
+  background-color: #ff4500;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  
+}
+
+.youtube-link button:hover {
+  background-color: #ff6347;
+}
+
+.p-header {
+  display: flex;
+  gap: 5px;
+}
+
+.p-header strong {
+  color: #0073e6 !important;
+}

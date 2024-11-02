@@ -1,0 +1,175 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 450px;
+  min-width: 200px;
+  margin: 10px;
+  background: rgb(209, 209, 209);
+  background: linear-gradient(240deg,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.5) 70%);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 47, 86, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+
+.product a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product:hover a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.product:hover {
+  background-color: #131921;
+  color: white;
+  transform: scale(1.02); 
+}
+
+.product:hover button {
+  background-color: #ff2020;
+  width: 80%;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.product:hover .youtube-button {
+  background-color: #ebebeb;
+  width: 100%;
+  color: #000000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.youtube-link button {
+  background-color: #ff4500;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0px 10px !important;
+  cursor: pointer;
+}
+
+.product>img {
+  width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.product:hover>img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.product:hover .product-price {
+  color: white;
+}
+
+.product:hover p {
+  color: white;
+}
+
+.product-rating {
+  display: flex;
+  justify-content: center;
+}
+
+.product-rating svg {
+  color: #ffa500;
+  margin-right: 5px;
+}
+
+.product>button {
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  transform: skew(-10deg);
+}
+
+.product>button:hover {
+  background-color: white;
+  color: #131921;
+  transition: all 0.3s ease;
+}
+
+.product>button:active {
+  transform: scale(0.9);
+}
+
+.home-row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.h4-product {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  color: #ffffff;
+  padding: 1px;
+
+}
+
+.h4-product::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 3px;
+  background: #000000;
+  border-radius: 2px;
+  margin: 8px auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.product:hover .h4-product::after {
+  background: #ffa500;
+  width: 60%;
+}
+
+
+.blurred-background-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.product-info {
+  z-index: 1;
+}
